@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Figtree'; /* Define the font family */
+  src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('woff2'),
+    /* Modern browsers */
+      url('../assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('woff'); /* Fallback for older browsers */
+  /* font-weight: normal; */
+  /* font-style: normal; */
+}
+
+body {
+  font-family: 'MyFont', sans-serif; /* Apply the custom font */
+}
+
+:root {
+  --primary: #f4d04e;
+  --primarywhite: #ffffff;
+  --primaryblack: #111111;
+  --primarygray: #6b6b6b;
+}
+
+body {
+  background-color: var(--primary);
+  font-family: 'Figtree', sans-serif;
+}
+
+section {
+  background-color: var(--primarywhite);
+  border-radius: 1rem;
+  width: 330px;
+  height: auto;
+  /* Make the section a block-level element */
+  display: block;
+
+  /* Center the section horizontally */
+  margin-left: auto;
+
+  /* Position the section absolutely relative to its nearest positioned ancestor */
+  position: absolute;
+
+  /* Place the section vertically at the middle of the viewport */
+  top: 50%;
+
+  /* Place the section horizontally at the middle of the viewport */
+  left: 50%;
+
+  /* Offset the section by half of its own width to achieve perfect centering */
+  margin-right: -50%;
+
+  /* Use transform to shift the section back up and left to fully center it */
+  transform: translate(-50%, -50%);
+
+  /* Add padding around the content inside the section */
+  padding: 1.5rem;
+
+  box-shadow: var(--primaryblack) 10px 10px 0px 0px;
+  border: 1px solid var(--primaryblack);
+}
+
+
+picture img {
+  /* Set the image width to 100% of its parent container (the section) */
+  width: 100%;
+
+  /* Ensure the height adjusts proportionally to maintain the aspect ratio */
+  height: auto;
+
+  /* Make the image cover the entire area of the container without distortion */
+  object-fit: cover;
+
+  /* Apply rounded corners to the image to match the section's border-radius */
+  border-radius: 1rem;
+}
+
+
+h3 {
+  background-color: var(--primary);
+  margin: 18px 0 12px 0;
+  width: 5rem;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+h5 {
+  font-weight: normal;
+  font-size: 15px;
+  margin: 2px;
+  text-shadow: #c9c9c9 0.5px 6px 5px;
+}
+
+p {
+  font-weight: lighter;
+  font-size: 1rem;
+  padding: 0;
+  color: var(--primarygray);
+  max-width: 350px;
+  line-height: 24px;
+}
+
+h1 {
+  margin: 16px 0;
+}
+
+.avatar {
+  width: 32px;
+  padding: 0 12px 0 0;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  font-size: 14px;
+}
