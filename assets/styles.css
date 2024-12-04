@@ -1,14 +1,10 @@
 @font-face {
   font-family: 'Figtree'; /* Define the font family */
-  src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') format('woff2'),
-    /* Modern browsers */
-      url('../assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('woff'); /* Fallback for older browsers */
-  /* font-weight: normal; */
-  /* font-style: normal; */
+  src: url('../assets/fonts/Figtree-VariableFont_wght.ttf') /* Define local file path to font */
 }
 
 body {
-  font-family: 'MyFont', sans-serif; /* Apply the custom font */
+  font-family: 'Figtree', sans-serif; /* Apply the custom font */
 }
 
 :root {
@@ -71,6 +67,9 @@ picture img {
   border-radius: 1rem;
 }
 
+picture img:hover {
+  cursor: pointer;
+}
 
 h3 {
   background-color: var(--primary);
@@ -88,6 +87,7 @@ h5 {
   text-shadow: #c9c9c9 0.5px 6px 5px;
 }
 
+
 p {
   font-weight: lighter;
   font-size: 1rem;
@@ -95,20 +95,34 @@ p {
   color: var(--primarygray);
   max-width: 350px;
   line-height: 24px;
+  transform: translateY(-3px); /* Move the text slightly upwards */
+
+}
+
+p:hover {
+  cursor: pointer;
+  transform: translateY(-5px); /* Move the text slightly upwards */
 }
 
 h1 {
   margin: 16px 0;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+h1:hover {
+  cursor: pointer;
+  color: var(--primary); /* Change text color on hover */
+  transform: translateY(-3px); /* Move the text slightly upwards */
 }
 
 .avatar {
   width: 32px;
-  padding: 0 12px 0 0;
 }
 
 .avatar-container {
   display: flex;
   align-items: center;
+  gap: 12px; /* Adds space between the image and the name */
 }
 
 h4 {
